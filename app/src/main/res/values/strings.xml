@@ -3,4 +3,5 @@
     <string name="bottom_bar_search">Search City</string>
     <string name="bottom_bar_current">Current City</string>
     <string name="bottom_bar_favorite">Favorite Cities</string>
+    <string name="current_city_switch_favorite">Favorite city</string>
 </resources>

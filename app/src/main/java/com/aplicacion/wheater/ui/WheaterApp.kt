@@ -9,38 +9,18 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.aplicacion.wheater.ui.navigation.AppBottomNavigation
-import com.aplicacion.wheater.ui.navigation.Navigation
+import com.aplicacion.wheater.ui.navigation.bottomBar.AppBottomNavigation
+import com.aplicacion.wheater.ui.navigation.bottomBar.Screen
+import com.aplicacion.wheater.ui.navigation.bottomBar.SetupNavGraph
 import com.aplicacion.wheater.ui.theme.WheaterTheme
 
 @ExperimentalFoundationApi
 @ExperimentalMaterialApi
 @Composable
 fun WheaterApp(appState: WheaterAppState = rememberWheaterAppState()) {
-
-    WheaterScreen {
-        Scaffold(
-            bottomBar = {
-                AppBottomNavigation(
-                    bottomNavOptions = WheaterAppState.BOTTOM_NAV_OPTIONS,
-                    currentRoute = appState.currentRoute,
-                    onNavItemClick = { appState.onNavItemClick(it) })
-            },
-            scaffoldState = appState.scaffoldState
-        ) { paddingValues ->
-            Box(modifier = Modifier.padding(paddingValues)) {
-                Navigation(appState.navController)
-            }
-        }
-    }
-}
-
-@Composable
-fun WheaterScreen(content: @Composable () -> Unit) {
-    WheaterTheme() {
-        // A surface container using the 'background' color from the theme
+    WheaterTheme {
         Surface(color = MaterialTheme.colors.background) {
-            content()
+            SetupNavGraph(appState)
         }
     }
 }

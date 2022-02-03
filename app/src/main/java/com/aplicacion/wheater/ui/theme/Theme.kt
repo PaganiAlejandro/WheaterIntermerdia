@@ -1,5 +1,6 @@
 package com.aplicacion.wheater.ui.theme
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
@@ -8,19 +9,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 private val DarkColorPalette = darkColors(
-    primary = Purple200,
-    primaryVariant = Purple700,
-    secondary = Teal200,
-    background = Color.Magenta,
-    surface = Bg_splash
+    primary = Bg_splash_dark,
+    primaryVariant = Bg_splash_dark,
+    secondary = Bg_splash_dark,
+    background = Bg_splash
 )
 
+@SuppressLint("ConflictingOnColor")
 private val LightColorPalette = lightColors(
     primary = Bg_splash,
     primaryVariant = Bg_splash,
     secondary = Bg_splash,
-    background = Bg_splash,
-    surface = Bg_splash
+    background = Bg_splash
 )
 
 @Composable

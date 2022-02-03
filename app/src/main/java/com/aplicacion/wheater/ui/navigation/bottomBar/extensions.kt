@@ -1,4 +1,4 @@
-package com.aplicacion.wheater.ui.navigation
+package com.aplicacion.wheater.ui.navigation.bottomBar
 
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
@@ -10,5 +10,13 @@ fun NavHostController.navigatePoppingUpToStartDestination(route: String) {
         }
         launchSingleTop = true
         restoreState = true
+    }
+}
+
+fun NavHostController.navigateToMain(route: String) {
+    navigate(route) {
+        popUpTo(graph.findStartDestination().id) {
+            inclusive = true
+        }
     }
 }

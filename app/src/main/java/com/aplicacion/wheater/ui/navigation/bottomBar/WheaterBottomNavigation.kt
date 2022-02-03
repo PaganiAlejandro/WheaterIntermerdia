@@ -1,4 +1,4 @@
-package com.aplicacion.wheater.ui.navigation
+package com.aplicacion.wheater.ui.navigation.bottomBar
 
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.*

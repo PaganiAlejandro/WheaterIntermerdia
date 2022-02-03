@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/compose-model-1643810362681.xml" value="0.1935185185185185" />
+        <entry key="../../../../layout/compose-model-1643810457713.xml" value="1.0" />
+        <entry key="../../../../layout/compose-model-1643811504016.xml" value="0.22" />
+        <entry key="../../../../layout/compose-model-1643811786070.xml" value="0.3298141891891892" />
+        <entry key="../../../../layout/compose-model-1643815712318.xml" value="0.19552364864864866" />
+        <entry key="../../../../layout/compose-model-1643817238919.xml" value="0.25" />
+        <entry key="../../../../layout/compose-model-1643826766644.xml" value="0.16304347826086957" />
+        <entry key="../../../../layout/compose-model-1643902640342.xml" value="0.25" />
+        <entry key="../../../../layout/compose-model-1643902807233.xml" value="0.33" />
+        <entry key="../../../../layout/compose-model-1643911389783.xml" value="0.33" />
+        <entry key="../../../../layout/compose-model-1643917887728.xml" value="0.33" />
+        <entry key="../../../../layout/compose-model-1643921329656.xml" value="0.18" />
+        <entry key="app/src/main/res/drawable/ic_buttons__symbol.xml" value="0.2942708333333333" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

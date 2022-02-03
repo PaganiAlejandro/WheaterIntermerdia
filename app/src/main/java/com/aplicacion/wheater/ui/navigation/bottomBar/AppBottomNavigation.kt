@@ -1,23 +1,22 @@
-package com.aplicacion.wheater.ui.navigation
+package com.aplicacion.wheater.ui.navigation.bottomBar
 
 import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 fun AppBottomNavigation(
-    bottomNavOptions: List<NavItem>,
-    currentRoute: String,
-    onNavItemClick: (NavItem) -> Unit
+    bottomBottomBarOptions: List<BottomBarItem>,
+    currentOption: String,
+    onNavItemClick: (BottomBarItem) -> Unit
 ) {
     WheaterBottomNavigation {
-        bottomNavOptions.forEach { item ->
+        bottomBottomBarOptions.forEach { item ->
             val title = stringResource(item.title)
             BottomNavigationItem(
-                selected = currentRoute.contains(item.navCommand.feature.route),
+                selected = currentOption.contains(item.option),
                 icon = {
                     Icon(
                         imageVector = item.icon,
