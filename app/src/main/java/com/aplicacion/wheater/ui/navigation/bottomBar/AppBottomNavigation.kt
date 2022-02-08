@@ -4,7 +4,10 @@ import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import com.aplicacion.wheater.ui.theme.selectItem
+import com.aplicacion.wheater.ui.theme.textColor_probability
 
 @Composable
 fun AppBottomNavigation(
@@ -20,12 +23,21 @@ fun AppBottomNavigation(
                 icon = {
                     Icon(
                         imageVector = item.icon,
-                        contentDescription = title
+                        contentDescription = title,
+                        tint = getTintColor(currentOption.contains(item.option))
                     )
                 },
                 label = { Text(text = title) },
                 onClick = { onNavItemClick(item) }
             )
         }
+    }
+}
+
+private fun getTintColor(value: Boolean): Color {
+    if (value){
+        return selectItem
+    } else {
+        return textColor_probability
     }
 }

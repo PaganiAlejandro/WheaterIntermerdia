@@ -14,8 +14,21 @@
         <entry key="../../../../layout/compose-model-1643902807233.xml" value="0.33" />
         <entry key="../../../../layout/compose-model-1643911389783.xml" value="0.33" />
         <entry key="../../../../layout/compose-model-1643917887728.xml" value="0.33" />
-        <entry key="../../../../layout/compose-model-1643921329656.xml" value="0.18" />
+        <entry key="../../../../layout/compose-model-1643921329656.xml" value="0.335" />
+        <entry key="../../../../layout/compose-model-1643977946196.xml" value="0.25" />
+        <entry key="../../../../layout/compose-model-1643997448775.xml" value="0.67" />
+        <entry key="../../../../layout/compose-model-1643999097904.xml" value="0.3298141891891892" />
+        <entry key="../../../../layout/compose-model-1643999754834.xml" value="0.5" />
+        <entry key="../../../../layout/compose-model-1644238823752.xml" value="0.4166666666666667" />
+        <entry key="../../../../layout/compose-model-1644243635418.xml" value="0.9" />
+        <entry key="../../../../layout/compose-model-1644258248310.xml" value="0.33" />
+        <entry key="../../../../layout/compose-model-1644352753307.xml" value="0.41203703703703703" />
+        <entry key="../../../../layout/compose-model-1644353158581.xml" value="0.24619932432432431" />
         <entry key="app/src/main/res/drawable/ic_buttons__symbol.xml" value="0.2942708333333333" />
+        <entry key="app/src/main/res/drawable/ic_weather_cloud.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/drawable/ic_weather_sun.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/drawable/ic_weather_thunder.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/drawable/ic_weathers_clouds.xml" value="0.2490740740740741" />
       </map>
     </option>
   </component>

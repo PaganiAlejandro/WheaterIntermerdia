@@ -23,6 +23,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField 'String','URL_PRODUCTION','"https://api.openweathermap.org/data/2.5/"'
+            buildConfigField 'String','API_KEY',"$API_KEY"
+        }
+        debug {
+            buildConfigField 'String', 'URL_DEVELOPMENT', '"https://api.openweathermap.org/data/2.5/"'
+            buildConfigField 'String', 'API_KEY', "$API_KEY"
         }
     }
     compileOptions {
@@ -50,6 +57,7 @@ android {
 dependencies {
 
     def nav_version = "2.5.0-alpha01"
+    def koin_version = "2.1.5"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -73,7 +81,10 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.2")
 
-    //Bar Graph
-    //implementation 'com.github.tehras:charts:0.1.5-alpha'
+    // Constraint Layout
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.0.0-beta02"
 
+    // KOIN
+    implementation "org.koin:koin-android:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
 }
