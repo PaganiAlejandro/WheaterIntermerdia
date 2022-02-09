@@ -26,7 +26,7 @@ val textStyleH3 = TextStyle(color = Color.White, fontSize = 12.sp)
 fun getImageWheater(wheater: String): Painter {
     return when (wheater) {
         WHEATER.SUNNY.name -> painterResource(id = R.drawable.ic_weather_sun)
-        WHEATER.CLOUDY.name -> painterResource(id = R.drawable.ic_weather_cloud)
+        WHEATER.CLOUDS.name -> painterResource(id = R.drawable.ic_weather_cloud)
         WHEATER.RAIN.name -> painterResource(id = R.drawable.ic_weather_thunder)  // TODO falta la imagen, no esta en el xd
         WHEATER.STORM.name -> painterResource(id = R.drawable.ic_weather_thunder)
         else -> return painterResource(id = R.drawable.ic_weather_sun)

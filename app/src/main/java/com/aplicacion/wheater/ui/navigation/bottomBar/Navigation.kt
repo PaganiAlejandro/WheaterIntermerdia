@@ -20,9 +20,6 @@ fun SetupNavGraph(appState: WheaterAppState) {
     ) {
         splashNav(navController)
         mainNav(appState)
-        // searchNav(navController)
-        // currentNav(navController)
-        // favoriteNav(navController)
     }
 }
 
@@ -46,27 +43,3 @@ private fun NavGraphBuilder.mainNav(appState: WheaterAppState) {
         WheaterMainScreen(appState)
     }
 }
-
-// private fun NavGraphBuilder.searchNav(navController: NavController) {
-//     composable(route = Screen.SEARCH.route) {
-//         SearchScreen(
-//
-//         )
-//     }
-// }
-//
-// private fun NavGraphBuilder.currentNav(navController: NavController) {
-//     composable(route = Screen.CURRENT.route) {
-//         CurrentCityScreen(
-//
-//         )
-//     }
-// }
-//
-// private fun NavGraphBuilder.favoriteNav(navController: NavController) {
-//     composable(route = Screen.FAVORITE.route) {
-//         FavoriteScreen(
-//
-//         )
-//     }
-// }

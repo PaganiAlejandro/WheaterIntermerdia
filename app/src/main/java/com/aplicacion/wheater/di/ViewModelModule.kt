@@ -7,6 +7,6 @@ import org.koin.dsl.module
 val viewModelModul = module {
 
     viewModel {
-        CurrentCityViewModel()
+        CurrentCityViewModel(get())
     }
 }

@@ -9,10 +9,10 @@ data class WheaterByDay(
 
 val listWheaterByDay = listOf(
     WheaterByDay("Now", "SUNNY", "0%", "25°"),
-    WheaterByDay("Tomorrow", "CLOUDY", "30%", "19°"),
-    WheaterByDay("Moday", "CLOUDY", "50%", "19°"),
+    WheaterByDay("Tomorrow", "CLOUDS", "30%", "19°"),
+    WheaterByDay("Moday", "CLOUDS", "50%", "19°"),
     WheaterByDay("Tuesday", "STORM", "90%", "14°"),
     WheaterByDay("Wednesday", "RAIN", "100%", "19°"),
     WheaterByDay("Thursday", "RAIN", "80%", "19°"),
-    WheaterByDay("Friday", "CLOUDY", "0%", "24°")
+    WheaterByDay("Friday", "CLOUDS", "0%", "24°")
 )
